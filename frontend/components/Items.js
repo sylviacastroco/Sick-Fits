@@ -35,9 +35,13 @@ class Items extends Component {
       <Center>
         <p>Items!</p>
         <Query query={ALL_ITEMS_QUERY}>
-          {(payload) => {
-            console.log(payload)
-            return <p>Hey Im the child of query</p>
+          {({data, error, loading}) => {
+            if(loading) return <p>Loading...</p>
+            if(error) return <p>Error: {error.message}</p>
+            console.log(data)
+            return <ItemsList>
+              {data.items.map(item =><Item item={item}/>)}
+            </ItemsList>
           }}
         </Query>
       </Center>
@@ -46,3 +50,4 @@ class Items extends Component {
 }
 
 export default Items;
+export { ALL_ITEMS_QUERY };
