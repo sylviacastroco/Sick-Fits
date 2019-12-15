@@ -32,7 +32,7 @@ class CreateItem extends Component {
   state = {
     title: 'Cool Shoes',
     description: 'Love those shoes',
-    image: 'shoe.jpg',
+    image: '../static/shoe1.jpeg',
     largeImage: 'largeshoe.jpg',
     price: 1000,
   };
@@ -93,6 +93,7 @@ uploadFile = async e => {
             required
             onChange={this.uploadFile}
             />
+            {this.state.image && <img width="300" src={this.state.image} alt="Upload Preview" />}
           </label>
 
           <label htmlFor="title">
