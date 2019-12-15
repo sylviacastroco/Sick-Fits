@@ -1,5 +1,5 @@
 import Items from '../components/Items';
-
+//ssickkkk
 const Home = props => (
   <div>
     <Items />
