@@ -72,6 +72,7 @@ class UpdateItem extends Component {
                   id="title"
                   name="title"
                   placeholder="Title"
+                  
                   required
                   defaultValue={data.item.title}
                   onChange={this.handleChange}

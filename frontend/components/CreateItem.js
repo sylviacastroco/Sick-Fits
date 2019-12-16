@@ -33,7 +33,7 @@ class CreateItem extends Component {
     title: 'Cool Shoes',
     description: 'Love those shoes',
     image: '../static/shoe1.jpeg',
-    largeImage: 'largeshoe.jpg',
+    largeImage: '../static/shoe1.jpeg',
     price: 1000,
   };
 
