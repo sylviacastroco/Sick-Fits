@@ -49,7 +49,7 @@ class RequestReset extends Component {
                 />
               </label>
 
-              <button type='submit'>Reset Password</button>
+              <button type='submit'>Request Reset!</button>
             </fieldset>
           </Form>
         )}

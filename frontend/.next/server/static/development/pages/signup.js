@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -370,7 +370,7 @@ function (_Component) {
             lineNumber: 52
           },
           __self: this
-        }, "Reset Password")));
+        }, "Request Reset!")));
       });
     }
   }]);
@@ -1013,7 +1013,7 @@ var SignupPage = function SignupPage(props) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/signup.js ***!
   \*******************************/
